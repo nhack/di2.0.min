@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
-import {Pizza} from './domain/pizza';
-import {PIZZAS} from './domain/data';
+import { Pizza } from './domain/pizza';
+import { PizzaFileService } from './service/pizzaFile.service';
 
 @Component({
   selector: 'pizza',
@@ -11,8 +11,9 @@ import {PIZZAS} from './domain/data';
 export class PizzaComponent {
 
   private pizzas: Pizza[];
+  private pizzaService: PizzaFileService = new PizzaFileService();
 
   constructor() {
-    this.pizzas = PIZZAS;
+    this.pizzas = this.pizzaService.getPizzas();
   }
 }
