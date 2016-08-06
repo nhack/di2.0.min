@@ -1,14 +1,14 @@
 import {Component} from '@angular/core';
-  
+
 import {Pizza} from './domain/pizza';
 import {PIZZAS} from './domain/data';
 
 @Component({
-  selector: 'pizzas',
-  templateUrl: 'app/pizzas/pizzas.component.html',
-  styleUrls: ['app/pizzas/pizzas.component.css']
+  selector: 'pizza',
+  templateUrl: 'app/pizza/pizza.component.html',
+  styleUrls: ['app/pizza/pizza.component.css']
 })
-export class PizzasComponent {
+export class PizzaComponent {
 
   private pizzas: Pizza[];
 

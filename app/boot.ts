@@ -1,4 +1,4 @@
-import {PizzasComponent} from './pizzas/pizzas.component';
+import {PizzaComponent} from './pizza/pizza.component';
 import {bootstrap} from '@angular/platform-browser-dynamic';
 
-bootstrap(PizzasComponent);
+bootstrap(PizzaComponent);
